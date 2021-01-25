@@ -1,0 +1,24 @@
+#4041
+stack=[]
+arr2=[]
+arr=input()
+sum=0
+i=0
+while(i<len(arr)):
+  stack.append(int(arr[i]))
+  i+=1
+while(len(stack)>0):
+  temp=stack.pop()
+  arr2.append(temp)
+  sum+=temp
+i=0
+while(i<len(arr2)):
+  if(arr2[i]==0):
+    i+=1
+  else:
+    break 
+while(i<len(arr2)):
+  print(arr2[i],end='')
+  i+=1
+print()
+print(sum)
